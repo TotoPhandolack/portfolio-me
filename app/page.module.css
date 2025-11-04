@@ -2,3 +2,15 @@
   margin-left: 35rem;
   margin-right: 35rem;
 }
+
+.navbar {
+  margin-top: 5rem;
+}
+
+.footer {
+  margin-bottom:0;
+}
+
+.marginTopLarge{
+  padding-top: 10rem
+}
