@@ -5,16 +5,21 @@ import styles from './page.module.css'
 import Navbar from '@/components/shared/navbar';
 import Footer from '@/components/shared/footer';
 
-
-
 const page = () => {
   return (
     <div className={`${styles.marginXLarge}`}>
       <Navbar/>
 
-      <div className={`flex flex-column justify-content-start bg-black-alpha-40 p-6 gap-4 border-round-lg ${styles.marginTopLarge}`}>
-        <h1 className='text-6xl font-bold text-white'>Hello there, I&apos;m Toto 👋 </h1>
-        <p className='text-white text-2xl'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, illum. Ducimus repudiandae cum provident laudantium nihil est officiis, aut molestiae iste optio. Itaque veniam inventore in, aperiam repellat voluptate esse.</p>
+      {/* Hero Section */}
+      <div className={`flex flex-column justify-content-center align-items-start gap-4 ${styles.heroSection}`}>
+        <h1 className={styles.heroTitle}>
+          Hi there<span style={{color: '#10b981'}}>,</span> I&apos;m <span style={{color: '#10b981'}}>Toto</span> <span className={styles.wave}>👋</span>
+        </h1>
+        
+        <p className={styles.heroDescription}>
+          I&apos;m a Laos based developer, GymRat, calisthenic, Handsome and kind.<br/>
+          Just autistically <a href="#" style={{color: '#10b981', textDecoration: 'underline'}}>bimbling</a> my way through life.
+        </p>
       </div>
 
       <Footer/>
